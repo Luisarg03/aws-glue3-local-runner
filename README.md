@@ -5,11 +5,19 @@
 
 1. [Proposito](#proposito)
 2. [Requisitos](#requisitos)
+3. [iniciando el servico](#iniciando-el-servico)
 3. [Referencias](#referencias)
 
 ## Proposito
 
 Brindar un entorno de desarrollo y pruebas de scripts en Python y Spark para el equipo de **DATA Tiendanube**
+
+## Requisitos
+    - Docker 20.10
+    - Docker-compose 1.25
+
+## iniciando el servico
+Step-By-Step
 
 ## Referencias
 [Glue-best-practices](https://docs.aws.amazon.com/prescriptive-guidance/latest/serverless-etl-aws-glue/best-practices.html)
