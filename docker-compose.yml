@@ -1,0 +1,19 @@
+
+aws-glue:
+    image: hiflylabs/local-aws-glue-v3-zeppelin:v1
+    container_name: 'aws-glue3'
+    environment:
+    - ZEPPELIN_LOG_DIR=/logs
+    - ZEPPELIN_NOTEBOOK_DIR=/notebook
+    - LOAD_EX=n
+    - EXECUTOR=Local
+    - AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
+    - AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
+    - AWS_SESSION_TOKEN=<AWS_SESSION_TOKEN>
+    ports:
+      - 8080:8080
+      - 4040:4040
+      - 9001:9001
+    volumes:
+      - ./logs:/logs:rw
+      - ./notebooks:/notebook:rw
